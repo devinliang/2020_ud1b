@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>選單練習</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    
+</head>
+<style>
+    ul {
+        /* 格式設定*/
+        background-color: lightpink;
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+
+        line-height: 3em;
+
+        /* 排版 */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul>li {
+        /* 排版 */
+        flex: 1 1 auto;
+    }
+    ul>li>a {
+        text-decoration: none;
+        background-color: lightpink;
+        color: green;
+        
+        
+        border-bottom: solid thick lightpink;
+        padding: 20px 0;
+        transition: ease all .5s;
+
+        /* 排版 */
+        display: block;
+    } 
+    ul>li>a:hover {
+        /* background-color: lightskyblue; */
+        
+
+        border-bottom: solid thick mediumaquamarine;
+        padding: 2px 0;
+    }
+    ul>li>a:active {
+        background-color: goldenrod;
+        color:indianred;
+    }
+   
+</style>
+<body>
+    <h1>文藻外語大學</h1>
+     <ul>
+         <li><a href="#"><i class="fas fa-virus"></i> 防疫專區</a></li>
+         <li><a href="#"><i class="fas fa-school"></i> 認識文藻</a></li>
+         <li><a href="#">資訊公開</a></li>
+         <li><a href="#">學術單位</a></li>
+         <li><a href="#">行政單位</a></li>
+         <li><a href="#">研究中心</a></li>
+         <li><a href="#">招生資訊</a></li>
+         <li><a href="#">對外服務</a></li>
+         <li><a href="#">國際交流</a></li>
+         <li><a href="#">高教深耕</a></li>
+     </ul>
+</body>
+</html>
