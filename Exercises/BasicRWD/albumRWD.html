@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的相簿</title>
+</head>
+<style>
+    body {
+        width: 90%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    header {
+        height: 300px;
+        background-color: bisque;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    #content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .picbox {
+        width:23%;
+        border: solid thin gray;
+        text-align: center;
+        padding-bottom: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px; 
+        overflow: hidden;
+    }
+    
+    .picbox > img {
+        max-width: 100%;
+        transition: all ease .5s;
+    }
+    .picbox > img:hover {
+        transform: scale(1.1);
+        filter: opacity(.7);
+    }
+   
+    .picbox > a {
+        text-decoration: none;
+        background-color: beige;
+        border: solid thin gray;
+        padding: 5px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 640px) and (max-width:960px){
+        header {
+            background-color: goldenrod;
+        }
+        .picbox {
+            width: 31%;
+        }
+        .picbox > a {
+            background-color: goldenrod;
+        }
+    }
+
+    @media screen and (max-width: 640px){
+        header {
+            background-color: indianred;
+        }
+        .picbox {
+            width: 98%;
+        }
+        .picbox > a {
+            background-color: indianred;
+        }
+    }
+
+</style>
+<body>
+    <header>
+        <h1>Hello Album</h1>
+    </header>
+
+    <div id="content">
+
+        <div class="picbox">
+            <img src="https://picsum.photos/id/100/600/480" alt="">
+            <p>圖片標題說明</p>
+            <a href="#">按鈕</a>
+        </div>
+
+        <div class="picbox">
+            <img src="https://picsum.photos/id/125/600/480" alt="">
+            <p>圖片標題說明</p>
+            <a href="#">按鈕</a>
+        </div>
+
+        <div class="picbox">
+            <img src="https://picsum.photos/id/110/600/480" alt="">
+            <p>圖片標題說明</p>
+            <a href="#">按鈕</a>
+        </div>
+
+        <div class="picbox">
+            <img src="https://picsum.photos/id/115/600/480" alt="">
+            <p>圖片標題說明</p>
+            <a href="#">按鈕</a>
+        </div>
+        <div class="picbox">
+            <img src="https://picsum.photos/id/200/600/480" alt="">
+            <p>圖片標題說明</p>
+            <a href="#">按鈕</a>
+        </div>
+
+        <div class="picbox">
+            <img src="https://picsum.photos/id/225/600/480" alt="">
+            <p>圖片標題說明</p>
+            <a href="#">按鈕</a>
+        </div>
+
+        <div class="picbox">
+            <img src="https://picsum.photos/id/210/600/480" alt="">
+            <p>圖片標題說明</p>
+            <a href="#">按鈕</a>
+        </div>
+
+        <div class="picbox">
+            <img src="https://picsum.photos/id/215/600/480" alt="">
+            <p>圖片標題說明</p>
+            <a href="#">按鈕</a>
+        </div>
+        <div class="picbox">
+            <img src="https://picsum.photos/id/305/600/480" alt="">
+            <p>圖片標題說明</p>
+            <a href="#">按鈕</a>
+        </div>
+
+        <div class="picbox">
+            <img src="https://picsum.photos/id/325/600/480" alt="">
+            <p>圖片標題說明</p>
+            <a href="#">按鈕</a>
+        </div>
+
+        <div class="picbox">
+            <img src="https://picsum.photos/id/310/600/480" alt="">
+            <p>圖片標題說明</p>
+            <a href="#">按鈕</a>
+        </div>
+
+        <div class="picbox">
+            <img src="https://picsum.photos/id/315/600/480" alt="">
+            <p>圖片標題說明</p>
+            <a href="#">按鈕</a>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 11xxxmmm NNNNNMMM</p>
+    </footer>
+</body>
+</html>

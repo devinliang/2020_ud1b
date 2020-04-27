@@ -4,4 +4,4 @@
 
 上課示範的內容
 
-* 響應式頁面 - [參考範例](Exercises/BasicRWDBasicRWD)
+* 響應式頁面 - Exercises/BasicRWDBasicRWD
