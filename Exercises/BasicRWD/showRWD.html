@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .block {
+        width:100%;
+        height: 500px;
+        background-color: bisque;
+        color: darkcyan;
+        font-size: 5em;
+    }
+
+    @media screen and (max-width: 960px) {
+        .block {
+            background-color: coral;
+            color: darkkhaki;
+        }
+    }
+    @media screen and (max-width: 720px) {
+        .block {
+            background-color: cyan;
+        }
+    }
+</style>
+<body>
+    
+    <div class="block">
+        <p>Hello World!</p>
+    </div>
+</body>
+</html>
