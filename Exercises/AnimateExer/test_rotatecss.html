@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>練習旋轉小方格</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+<style>
+    #andiv {
+        width: 70px;
+        height: 47px;
+        background: #92B901;
+        color: #ffffff;
+        position: relative;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+        text-size-adjust: 100%;
+        line-height: 30px;
+    }
+
+    .run_animation {
+        animation-name: animated_div;
+        animation-duration: 3s;
+    }
+
+    @keyframes animated_div {
+        0% {
+            transform: rotate(0deg);
+            left: 0px;
+        }
+
+        25% {
+            transform: rotate(20deg);
+            left: 0px;
+        }
+
+        50% {
+            transform: rotate(0deg);
+            left: 500px;
+        }
+
+        55% {
+            transform: rotate(0deg);
+            left: 500px;
+        }
+
+        70% {
+            transform: rotate(0deg);
+            left: 500px;
+            background: #1ec7e6;
+        }
+
+        100% {
+            transform: rotate(-360deg);
+            left: 0px;
+        }
+    }
+</style>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <h1>動畫練習</h1>
+
+    <div id="andiv">CSS</div>
+    <script>
+        $( "#andiv" ).hover(function(){ 
+            $(this).addClass("run_animation");
+        });
+    </script>
+</body>
+
+</html>
