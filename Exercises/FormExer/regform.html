@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>報名表</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+</head>
+<style>
+    label {
+        display: inline-block;
+        min-width: 70pt;
+        text-align: right;
+    }
+</style>
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <h1>報名表</h1>
+
+    <form action="" method="POST">
+    <p>
+        <label for="chname">姓名</label>
+        <input type="text" name="chname" placeholder="請輸入中文姓名">
+    </p>
+
+    <p>
+        <label for="userpass">密碼</label>
+        <input type="password" name="userpass" id="">
+    </p>
+
+    <p>
+        <label for="bdate">生日</label>
+        <input type="date" name="bdate" id="">
+    </p>
+
+    <p>
+        <label for="favcolor">偏好顏色</label>
+        <input type="color" name="favcolor" id="">
+    </p>
+    
+    <p>
+        <label for="gender">性別</label>
+        <input type="radio" name="gender" id="">男
+        <input type="radio" name="gender" id="">女
+        <input type="radio" name="gender" id="">保留
+    </p>
+    <p>
+        <label for="">喜好主題</label>
+        <input type="checkbox" name="chanel[]" id="">新聞
+        <input type="checkbox" name="chanel[]" id="">時事
+        <input type="checkbox" name="chanel[]" id="">運動
+        <input type="checkbox" name="chanel[]" id="">娛槳
+    </p>
+    <p>
+        <label for="userphoto">上傳照片</label>
+       <input type="file" name="userphoto" id="" accept=".jpg,.png"> 
+    </p>
+    
+    <p>
+        <label for="jobtype">工作類型</label>
+        <select name="jobtype" id="">
+            <option value="0">請選擇類型...</option>
+            <option value="學生">學生</option>
+            <option value="上班族">上班族</option>
+
+        </select>
+    </p>
+    <p>
+        <label for="place">居住地區</label>
+        <input type="text" name="place" list="area">
+        <datalist id="area">
+            <option value="台北">
+            <option value="台中">
+            <option value="台南">
+            <option value="高雄">
+        </datalist>
+    </p>
+    
+    <p>
+        <label for="intro">個人簡介</label></p>
+        <textarea name="intro" id="" cols="30" rows="10"></textarea>
+        <script>
+            CKEDITOR.replace( 'intro' );
+        </script>
+    
+    <p> <input type="submit" value="確認送出">
+       
+        <input type="reset" value="清除重填">
+    </p>
+    </form>
+</body>
+
+</html>
