@@ -1,0 +1,120 @@
+
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/***************
+header
+***************/
+header #banner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: auto;
+}
+header #slogan {
+    color: #916FB0;
+    font-size: smaller;
+    font-style: italic;
+}
+
+#menu {
+    background-color: black;
+}
+ul {
+    max-width: 1024px;
+    margin: auto;
+    /* 格式設定*/
+    background-color: gold;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    line-height: 2em;
+
+    /* 排版 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul>li {
+    /* 排版 */
+    flex: 1 1 auto;
+}
+ul>li>a {
+    text-decoration: none;
+    background-color: black;
+    color: white; 
+    
+    border-bottom: solid thick black;
+    padding: 20px 0;
+    transition: ease all .5s;
+
+    /* 排版 */
+    display: block;
+} 
+ul>li>a:hover {
+    border-bottom: solid thick mediumaquamarine;
+    padding: 2px 0;
+}
+
+ul>li>a:active {
+    background-color: goldenrod;
+    color:indianred;
+}
+
+/***************
+content 1
+***************/
+.bigpic {
+    position: relative;
+    height: 75vh;
+}
+.bigpic .bg{
+    width:100%;
+    height:100%;
+    background-image: url(images/hotel_front.jpg);
+    background-size: cover;
+}
+.bigpic p {
+    position: absolute;
+    top: 10px;
+    left:50px;
+    font-size: 2.5em;
+    color: white;
+    width:33%;
+    text-shadow: 2px 5px rebeccapurple;
+}
+
+/***************
+content 2
+***************/
+.content {
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+}
+
+/***************
+footer 
+***************/
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer p {
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 50px;
+    font-size: x-small;
+}
+footer .social {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: x-large;
+    word-spacing: 2em;
+}
