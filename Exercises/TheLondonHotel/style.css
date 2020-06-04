@@ -1,6 +1,7 @@
 
 * {
     font-family: 'Noto Sans TC', sans-serif;
+    color: gray;
 }
 
 /***************
@@ -21,7 +22,7 @@ header #slogan {
 #menu {
     background-color: black;
 }
-ul {
+#menu ul {
     max-width: 1024px;
     margin: auto;
     /* 格式設定*/
@@ -37,11 +38,11 @@ ul {
     align-items: center;
 }
 
-ul>li {
+#menu ul>li {
     /* 排版 */
     flex: 1 1 auto;
 }
-ul>li>a {
+#menu ul>li>a {
     text-decoration: none;
     background-color: black;
     color: white; 
@@ -53,12 +54,12 @@ ul>li>a {
     /* 排版 */
     display: block;
 } 
-ul>li>a:hover {
+#menu ul>li>a:hover {
     border-bottom: solid thick mediumaquamarine;
     padding: 2px 0;
 }
 
-ul>li>a:active {
+#menu ul>li>a:active {
     background-color: goldenrod;
     color:indianred;
 }
@@ -76,7 +77,7 @@ content 1
     background-image: url(images/hotel_front.jpg);
     background-size: cover;
 }
-.bigpic p {
+.bigpic > p {
     position: absolute;
     top: 10px;
     left:50px;
@@ -85,6 +86,29 @@ content 1
     width:33%;
     text-shadow: 2px 5px rebeccapurple;
 }
+.bigpic .bg2{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: url(images/leicester_square.jpg);
+    background-size: cover;
+}
+.bigpic .centerblock {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    bottom:0;
+
+    width:40%;
+    background-color: white;
+    opacity: .75;
+
+    padding: 50px;
+    border-radius: 15px;
+}
 
 /***************
 content 2
@@ -92,8 +116,92 @@ content 2
 .content {
     max-width: 800px;
     margin: auto;
-    text-align: justify;
+    text-align: justify;    
 }
+.content .info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content .info .infocard {
+    width: 32%;
+}
+.content .info .infocard img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.content .info .infocard h3 {
+    color: red;
+}
+
+.content .info .infocard .infotxt {
+    padding-bottom: 15px;
+    border-bottom: solid thin gray;
+}
+
+.greenblock {
+    box-sizing: border-box;
+
+    max-width: 960px;
+    margin: auto;
+    background-color: #00ABDB;
+    padding: 30px 350px 30px 30px;
+    
+    color:white !important;
+    border-radius: 20px;
+    margin-bottom: 50px;
+
+    background-image: url(images/greenplanet.png);
+    background-repeat: no-repeat;
+    
+    background-size: auto 135%;
+    background-position: 135% center;
+}
+
+/***************
+events
+***************/
+.twopic {
+    position: relative;
+    display: flex;
+    height: 75vh;
+}
+
+.twopic .picx {
+    position: relative;
+    width:50%;
+    height:100%;
+}
+
+.twopic .picx .bg3 {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: url(images/events_business.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.twopic .picx .bg4 {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: url(images/events_wedding.jpg);
+    background-size: cover;
+}
+
+.twopic .picx .bottomblock {
+    position: absolute;
+    bottom:0;
+    background-color: black;
+    color:white;
+    /* opacity: .9; */
+}
+
 
 /***************
 footer 
